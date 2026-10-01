@@ -1,0 +1,142 @@
+
+body {
+  margin: 0;
+  padding: 0 16px;
+  background-color: #eedeb4;
+  background-size: 22px 22px;
+  color: #2a2012;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+#outerbox {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fffdf8;
+  border-left: 3px solid #4a3516;
+  border-right: 3px solid #4a3516;
+  border-radius: 22px;
+  box-shadow: 8px 8px 0 #4a3516;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 24px;
+  align-items: center;
+  padding: 32px 40px;
+}
+
+.header-text {
+  grid-column: 1;
+  margin: 0px 0;
+}
+
+#photo {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  width: 122px;
+  height: 122px;
+  border-radius: 40%;;
+}
+
+#header h1 {
+  color: #4a3516;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.6rem;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+#header p:first-of-type {
+  color: #6b5b43;
+  font-size: 1.05rem;
+}
+
+#header a {
+  color: #4a3516;
+  font-weight: 600;
+}
+
+main {
+  padding: 5px 40px 36px;
+  text-align: justify;
+}
+
+section {
+  margin-top: 20px;
+}
+
+.section-heading {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 3px 16px;
+  background-color: #eedeb4;
+  border: 2px solid #4a3516;
+  border-radius: 100px;
+  box-shadow: 3px 3px 0 #4a3516;
+  color: #4a3516;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0;
+}
+
+#education-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.table-heading,
+.table-data {
+  padding: 8px 12px 8px 0;
+  vertical-align: top;
+}
+.table-heading {
+  color: #4a3516;
+  border-bottom: 2px solid #4a3516;
+}
+.table-data {
+  border-bottom: 1px dashed #eedeb4;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.projects-item {
+  margin-bottom: 16px;
+  padding: 8px 0;
+}
+.projects-item b {
+  color: #4a3516;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+}
+
+.skills-item {
+  padding: 8px 0;
+  border-bottom: 1px dashed #eedeb4;
+}
+.skills-item:last-child {
+  border-bottom: none;
+}
+.skills-item b {
+  color: #4a3516;
+}
+
+#contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.contact {
+  padding: 4px 0;
+  color: #4a3516;
+  font-weight: 600;
+  text-decoration: none;
+}
