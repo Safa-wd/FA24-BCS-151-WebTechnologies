@@ -11,7 +11,7 @@ Blaugrana Store is a static e-commerce website inspired by the official FC Barce
 
 The project focuses on creating responsive web pages using HTML, CSS, and Bootstrap.
 
-# 2. Reference Website
+## 2. Reference Website
 
 Name: FC Barcelona Official Store  
 URL: https://store.fcbarcelona.com/en-pk
