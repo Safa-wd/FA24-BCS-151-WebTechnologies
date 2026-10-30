@@ -901,3 +901,15 @@ button.media:focus-visible {
     animation: none !important;
   }
 }
+
+.filter-bar { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.25rem; }
+.filter-opt { cursor: pointer; padding: .4rem 1.1rem; border: 1px solid hsl(357, 70%, 45%); border-radius: 999px; color: hsl(357, 70%, 45%); background: #fff; font-size: .88rem; font-weight: 500; transition: background .2s, color .2s; }
+.filter-opt:hover { background: hsl(357, 70%, 95%); }
+.btn-check:checked + .filter-opt { background: hsl(357, 70%, 45%); color: #fff; border-color: hsl(357, 70%, 45%); }
+
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: .9rem; padding: 0; }
+.product-grid .item { flex: none; min-width: 0; scroll-margin-top: 1rem; }
+
+#products:has(#cat-jerseys:checked) .item:not([data-cat="jerseys"]) { display: none; }
+#products:has(#cat-training:checked) .item:not([data-cat="training"]) { display: none; }
+#products:has(#cat-apparel:checked) .item:not([data-cat="apparel"]) { display: none; }
