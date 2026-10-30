@@ -702,12 +702,6 @@ button.media:focus-visible {
   border-radius: .6rem;
 }
 
-@media (min-width: 992px) {
-  .pd-img {
-    position: sticky;
-    top: 1.5rem;
-  }
-}
 
 .pd-collection {
   font: 600 .9rem/1.5 var(--font-head);
@@ -902,6 +896,14 @@ button.media:focus-visible {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+@media (max-width: 420px) {
+  .brand-center { font-size: .9rem; }
+}
+
 .filter-bar { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.25rem; }
 .filter-opt { cursor: pointer; padding: .4rem 1.1rem; border: 1px solid hsl(357, 70%, 45%); border-radius: 999px; color: hsl(357, 70%, 45%); background: #fff; font-size: .88rem; font-weight: 500; transition: background .2s, color .2s; }
 .filter-opt:hover { background: hsl(357, 70%, 95%); }
@@ -913,3 +915,14 @@ button.media:focus-visible {
 #products:has(#cat-jerseys:checked) .item:not([data-cat="jerseys"]) { display: none; }
 #products:has(#cat-training:checked) .item:not([data-cat="training"]) { display: none; }
 #products:has(#cat-apparel:checked) .item:not([data-cat="apparel"]) { display: none; }
+
+.pd-layout { display: grid; gap: 1.5rem; grid-template-columns: 1fr; grid-template-areas: "image" "details" "desc"; }
+.pd-image { grid-area: image; margin: 0; }
+.pd-side { grid-area: details; }
+.pd-desc { grid-area: desc; margin-top: 0; }
+
+@media (min-width: 651px) {
+  .pd-layout { grid-template-columns: 1fr 1fr; grid-template-areas: "image details" "desc desc"; gap: 2rem; }
+  .pd-img { position: static; aspect-ratio: auto; height: max(120vh, 800px); object-fit: contain; }
+  .pd-box { position: sticky; top: 81px; }
+}
