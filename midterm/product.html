@@ -39,12 +39,13 @@
       <a href="index.html">Home</a><span>/</span><a href="index.html#men">Men</a><span>/</span><span>Men's home jersey 26/27</span>
     </nav>
 
-    <article class="row g-4 g-lg-5">
-      <figure class="col-12 col-lg-6 mb-0">
+    <article class="pd-layout">
+      <figure class="pd-image">
         <img src="images/men.png" class="pd-img" alt="Men's home jersey 26/27">
       </figure>
 
-      <form class="col-12 col-lg-6" action="#" method="post">
+      <div class="pd-side">
+      <form class="pd-box" action="#" method="post">
         <p class="pd-collection">Stadium collection</p>
         <header class="d-flex justify-content-between align-items-start gap-3">
           <h1 class="pd-title">Men's home jersey 26/27</h1>
@@ -53,13 +54,13 @@
 
         <fieldset class="d-flex flex-wrap gap-2 mt-4 mb-4">
           <legend class="opt-head"><span class="opt-label">Size</span><button type="button" class="size-guide"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="8" width="20" height="8" rx="1.5"/><path d="M6 8v3M10 8v4M14 8v3M18 8v4"/></svg> Size guide</button></legend>
-        <input type="radio" class="btn-check" name="size" id="size-0"><label class="size-opt" for="size-0">XS</label>
-        <input type="radio" class="btn-check" name="size" id="size-1"><label class="size-opt" for="size-1">S</label>
-        <input type="radio" class="btn-check" name="size" id="size-2"><label class="size-opt" for="size-2">M</label>
-        <input type="radio" class="btn-check" name="size" id="size-3"><label class="size-opt" for="size-3">L</label>
-        <input type="radio" class="btn-check" name="size" id="size-4"><label class="size-opt" for="size-4">XL</label>
-        <input type="radio" class="btn-check" name="size" id="size-5" disabled><label class="size-opt" for="size-5">2XL</label>
-        <input type="radio" class="btn-check" name="size" id="size-6"><label class="size-opt" for="size-6">3XL</label>
+          <input type="radio" class="btn-check" name="size" id="size-0"><label class="size-opt" for="size-0">XS</label>
+          <input type="radio" class="btn-check" name="size" id="size-1"><label class="size-opt" for="size-1">S</label>
+          <input type="radio" class="btn-check" name="size" id="size-2"><label class="size-opt" for="size-2">M</label>
+          <input type="radio" class="btn-check" name="size" id="size-3"><label class="size-opt" for="size-3">L</label>
+          <input type="radio" class="btn-check" name="size" id="size-4"><label class="size-opt" for="size-4">XL</label>
+          <input type="radio" class="btn-check" name="size" id="size-5" disabled><label class="size-opt" for="size-5">2XL</label>
+          <input type="radio" class="btn-check" name="size" id="size-6"><label class="size-opt" for="size-6">3XL</label>
         </fieldset>
 
         <div class="row g-3 align-items-end mb-3">
@@ -67,18 +68,26 @@
           <p class="col-8 d-flex justify-content-between align-items-end subtotal mb-0"><span>Subtotal</span><span>Rs. 18,500</span></p>
         </div>
         <button type="submit" class="btn btn-yellow btn-cart w-100"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg> ADD TO CART</button>
-
-        <section class="pd-more">
-          <details class="pd-details" open>
-            <summary>Product description</summary>
-            <p>Blue and garnet stripes in a breathable fabric, with an embroidered crest and a soft collar for match days and every day after.</p>
-          </details>
-          <details class="pd-details">
-            <summary>Delivery &amp; returns</summary>
-            <p>Standard delivery in 5-7 working days. Unworn items can be returned within 14 days.</p>
-          </details>
-        </section>
       </form>
+      </div>
+
+      <section class="pd-desc pd-more">
+        <details class="pd-details" open>
+          <summary>Product description</summary>
+          <p>Blue and garnet stripes in a breathable fabric, with an embroidered crest and a soft collar for match days and every day after.</p>
+          <p>The 26/27 home jersey carries the club's famous vertical stripes in a bold new weave. The stripes are knitted into the fabric rather than printed on top, so the colours stay sharp wash after wash and never crack or peel.</p>
+          <p>The body is made from a lightweight, moisture-wicking polyester that pulls sweat away from the skin and dries quickly. Fine ventilation zones across the back and under the arms keep air moving, which makes the shirt comfortable in a packed stadium or on a warm evening in the park.</p>
+          <p>The crest on the chest is embroidered, not heat-pressed, giving it a raised, premium finish that lasts. The sponsor and competition badges are applied with a soft, flexible film so they do not stiffen the fabric or irritate the skin.</p>
+          <p>The collar is soft and flat-knitted with a small contrast trim, and the seams are placed away from the shoulders so the shirt sits comfortably even under a backpack strap. The tail is slightly longer at the back, so the shirt stays tucked in or hangs neatly when worn out.</p>
+          <p>The Stadium fit is a regular, relaxed cut meant for everyday wear. If you prefer a snugger fit, choose one size down. If you plan to layer a hoodie or jacket over it, stay with your usual size.</p>
+          <p>Care instructions: machine wash cold with similar colours, inside out. Do not bleach and do not tumble dry. Iron on the reverse side at a low temperature, and never iron directly over the crest or badges. Dry cleaning is not recommended.</p>
+          <p>Every jersey ships in recyclable packaging and includes a quality card with a code to confirm that your shirt is genuine. Whether you wear it to the match, to training, or just out with friends, this is the shirt for every match day.</p>
+        </details>
+        <details class="pd-details">
+          <summary>Delivery &amp; returns</summary>
+          <p>Standard delivery in 5-7 working days. Unworn items can be returned within 14 days.</p>
+        </details>
+      </section>
     </article>
   </main>
 
@@ -118,7 +127,7 @@
     </section>
     <p class="footer-note d-flex flex-column flex-md-row justify-content-between gap-1 pt-3 mb-0">
       <span>&copy; 2026 Blaugrana Store. Student project for CSC336, not an official shop.</span>
-      <span>This website is designed by BBG</span>
+      <span>This website is designed by Safa</span>
     </p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
