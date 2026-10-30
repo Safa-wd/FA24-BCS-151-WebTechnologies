@@ -62,6 +62,14 @@
         <label class="filter-opt" for="cat-apparel">Apparel</label>
       </div>
 
+      <div class="toolbar">
+        <label for="search" class="visually-hidden">Search products</label>
+        <input type="search" id="search" class="form-control search-input" placeholder="Search products" autocomplete="off">
+        <button type="button" id="sort-price" class="btn btn-yellow">Sort by price</button>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>No products found</p>
+
       <ul id="product-grid" class="product-grid list-unstyled mb-0">
         <li class="item" id="men" data-cat="jerseys"><a href="product.html" class="media"><img src="images/men-1.png" alt="Men's home jersey 26/27"><span class="flag">New typography</span></a>
           <p class="coll">Stadium collection</p>
@@ -309,5 +317,6 @@
     </p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
