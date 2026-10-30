@@ -48,203 +48,199 @@
       </header>
     </section>
 
-    <section id="men" class="shop-section px-3 px-md-5 pt-5 pb-3">
-      <h2 class="section-title">Men</h2>
-      <ul class="strip list-unstyled mb-0">
-        <li class="item">
-          <a href="product.html" class="media"><img src="images/men-1.png" alt="Men's home jersey 26/27"><span class="flag">New typography</span></a>
+    <section id="products" class="shop-section px-3 px-md-5 pt-5 pb-3">
+      <h2 class="section-title">Shop</h2>
+
+      <div class="filter-bar">
+        <input type="radio" class="btn-check" name="cat" id="cat-all" value="all" checked>
+        <label class="filter-opt" for="cat-all">All</label>
+        <input type="radio" class="btn-check" name="cat" id="cat-jerseys" value="jerseys">
+        <label class="filter-opt" for="cat-jerseys">Jerseys</label>
+        <input type="radio" class="btn-check" name="cat" id="cat-training" value="training">
+        <label class="filter-opt" for="cat-training">Training</label>
+        <input type="radio" class="btn-check" name="cat" id="cat-apparel" value="apparel">
+        <label class="filter-opt" for="cat-apparel">Apparel</label>
+      </div>
+
+      <ul id="product-grid" class="product-grid list-unstyled mb-0">
+        <li class="item" id="men" data-cat="jerseys"><a href="product.html" class="media"><img src="images/men-1.png" alt="Men's home jersey 26/27"><span class="flag">New typography</span></a>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><a href="product.html">Men's home jersey 26/27</a></h3>
           <p class="item-price">Rs. 18,500</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="jerseys">
           <button type="button" class="media"><img src="images/men-2.png" alt="Men's away jersey 26/27"><span class="flag">New typography</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Men's away jersey 26/27</button></h3>
           <p class="item-price">Rs. 18,500</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="jerseys">
           <button type="button" class="media"><img src="images/men-3.jpg" alt="Men's third jersey 26/27"><span class="flag">New typography</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Men's third jersey 26/27</button></h3>
           <p class="item-price">Rs. 18,500</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="jerseys">
           <button type="button" class="media"><img src="images/men-4.jpg" alt="Men's home long-sleeve jersey"><span class="flag">New typography</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Men's home long-sleeve jersey</button></h3>
           <p class="item-price">Rs. 6,200</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="jerseys">
           <button type="button" class="media"><img src="images/men-5.jpg" alt="Men's away long-sleeve jersey"><span class="flag">New typography</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Men's away long-sleeve jersey</button></h3>
           <p class="item-price">Rs. 6,200</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="training">
           <button type="button" class="media"><img src="images/men-6.jpg" alt="Men's training t-shirt"></button>
           <p class="coll">Training collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Men's training t-shirt</button></h3>
           <p class="item-price">Rs. 4,800</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="training">
           <button type="button" class="media"><img src="images/men-7.jpg" alt="Men's training shorts"></button>
           <p class="coll">Training collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Men's training shorts</button></h3>
           <p class="item-price">Rs. 4,200</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="apparel">
           <button type="button" class="media"><img src="images/men-8.jpg" alt="Men's 1899 hoodie"></button>
           <p class="coll">Apparel</p>
           <h3 class="item-name"><button type="button" class="name-btn">Men's 1899 hoodie</button></h3>
           <p class="item-price">Rs. 9,800</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-      </ul>
-    </section>
 
-    <section id="kids" class="shop-section px-3 px-md-5 pt-4 pb-3">
-      <h2 class="section-title">Kids</h2>
-      <ul class="strip list-unstyled mb-0">
-        <li class="item">
+        <li class="item" id="kids" data-cat="jerseys">
           <button type="button" class="media"><img src="images/kids-1.jpg" alt="Junior's home jersey 26/27"><span class="flag">New typography</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Junior's home jersey 26/27</button></h3>
           <p class="item-price">Rs. 5,900</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="jerseys">
           <button type="button" class="media"><img src="images/kids-2.jpg" alt="Junior away jersey 26/27"><span class="flag">New typography</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Junior away jersey 26/27</button></h3>
           <p class="item-price">Rs. 5,900</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="jerseys">
           <button type="button" class="media"><img src="images/kids-3.jpg" alt="Junior third jersey 26/27"><span class="flag">New typography</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Junior third jersey 26/27</button></h3>
           <p class="item-price">Rs. 5,900</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="training">
           <button type="button" class="media"><img src="images/kids-4.jpg" alt="Junior training shorts"></button>
           <p class="coll">Training collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Junior training shorts</button></h3>
           <p class="item-price">Rs. 4,200</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="training">
           <button type="button" class="media"><img src="images/kids-5.jpg" alt="Junior training top"></button>
           <p class="coll">Training collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Junior training top</button></h3>
           <p class="item-price">Rs. 4,500</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="apparel">
           <button type="button" class="media"><img src="images/kids-6.jpg" alt="Junior hoodie"></button>
           <p class="coll">Apparel</p>
           <h3 class="item-name"><button type="button" class="name-btn">Junior hoodie</button></h3>
           <p class="item-price">Rs. 7,200</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="jerseys">
           <button type="button" class="media"><img src="images/kids-7.jpg" alt="Baby's home kit 26/27"><span class="flag">Exclusive</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Baby's home kit 26/27</button></h3>
           <p class="item-price">Rs. 8,900</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="jerseys">
           <button type="button" class="media"><img src="images/kids-8.jpg" alt="Baby's away kit 26/27"><span class="flag">Exclusive</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Baby's away kit 26/27</button></h3>
           <p class="item-price">Rs. 8,900</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-      </ul>
-    </section>
 
-    <section id="women" class="shop-section px-3 px-md-5 pt-4 pb-3">
-      <h2 class="section-title">Women</h2>
-      <ul class="strip list-unstyled mb-0">
-        <li class="item">
+        <li class="item" id="women" data-cat="jerseys">
           <button type="button" class="media"><img src="images/women-1.jpg" alt="Women's home jersey 26/27"><span class="flag">New typography</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Women's home jersey 26/27</button></h3>
           <p class="item-price">Rs. 17,500</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="jerseys">
           <button type="button" class="media"><img src="images/women-2.jpg" alt="Women's away jersey 26/27"><span class="flag">New typography</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Women's away jersey 26/27</button></h3>
           <p class="item-price">Rs. 17,500</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="jerseys">
           <button type="button" class="media"><img src="images/women-3.jpg" alt="Women's third jersey 26/27"><span class="flag">New typography</span></button>
           <p class="coll">Stadium collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Women's third jersey 26/27</button></h3>
           <p class="item-price">Rs. 17,500</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="training">
           <button type="button" class="media"><img src="images/women-4.jpg" alt="Women's training top"></button>
           <p class="coll">Training collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Women's training top</button></h3>
           <p class="item-price">Rs. 4,800</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="training">
           <button type="button" class="media"><img src="images/women-5.jpg" alt="Women's training shorts"></button>
           <p class="coll">Training collection</p>
           <h3 class="item-name"><button type="button" class="name-btn">Women's training shorts</button></h3>
           <p class="item-price">Rs. 4,200</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="apparel">
           <button type="button" class="media"><img src="images/women-6.jpg" alt="Women's hoodie"></button>
           <p class="coll">Apparel</p>
           <h3 class="item-name"><button type="button" class="name-btn">Women's hoodie</button></h3>
           <p class="item-price">Rs. 9,500</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="apparel">
           <button type="button" class="media"><img src="images/women-7.jpg" alt="Women's t-shirt"></button>
           <p class="coll">Apparel</p>
           <h3 class="item-name"><button type="button" class="name-btn">Women's t-shirt</button></h3>
           <p class="item-price">Rs. 5,400</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="apparel">
           <button type="button" class="media"><img src="images/women-8.jpg" alt="Women's zip jacket"></button>
           <p class="coll">Apparel</p>
           <h3 class="item-name"><button type="button" class="name-btn">Women's zip jacket</button></h3>
           <p class="item-price">Rs. 12,500</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-      </ul>
-    </section>
 
-    <section id="accessories" class="shop-section px-3 px-md-5 pt-4 pb-4">
-      <h2 class="section-title">Accessories</h2>
-      <ul class="strip list-unstyled mb-0">
-        <li class="item">
+        <li class="item" id="accessories" data-cat="apparel">
           <button type="button" class="media"><img src="images/p7.svg" alt="Club scarf"></button>
           <p class="coll">Accessories</p>
           <h3 class="item-name"><button type="button" class="name-btn">Club scarf</button></h3>
           <p class="item-price">Rs. 3,200</p>
           <button type="button" class="btn btn-yellow btn-sm">Add to Cart</button>
         </li>
-        <li class="item">
+        <li class="item" data-cat="apparel">
           <button type="button" class="media"><img src="images/p8.svg" alt="Club cap"></button>
           <p class="coll">Accessories</p>
           <h3 class="item-name"><button type="button" class="name-btn">Club cap</button></h3>
