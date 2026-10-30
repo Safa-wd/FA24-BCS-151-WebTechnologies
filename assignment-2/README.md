@@ -18,9 +18,11 @@ URL: https://store.fcbarcelona.com/en-pk
 
 The design is inspired by its navigation bar, product sections, colors, and product detail layout.
 
-# Reference Screenshot
+### Reference Screenshot
 
 ![FC Barcelona Store](images/reference-website.png)
+![FC Barcelona Store](images/reference-website3.png)
+![FC Barcelona Store](images/reference-website2.png)
 
 ## 3. Technologies Used
 
